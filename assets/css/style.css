@@ -1,0 +1,15 @@
+body {
+    background-image: url("../images/art-background-beautiful-988868.jpg");
+    
+    font-weight: bold;
+}
+.jumbotron {
+    background: #ffffff!important;
+    opacity: .67;
+    font-size: 64px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.card-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 20px;
+}
