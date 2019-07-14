@@ -13,3 +13,13 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 20px;
 }
+.card-text1 {
+    height: 70px;
+}
+#crystals {
+    margin-left: 40px;
+}
+.win-loss {
+    text-align: center;
+    padding-top: 10px;
+}
