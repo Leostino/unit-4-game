@@ -2,13 +2,14 @@ $(document).ready(function(){
 
  //declare the variables
 
- var wins = 0, losses = 0, score = 0;
+ var wins = 0, losses = 0, score = 0, totalGames = wins + losses;
 
  //update the dom
 
  $("#win").html(wins);
  $("#loss").html(losses);
  $("#score").html(score);
+ $("#total-games").html(totalGames);
 
  //pick a random number and display to the player
 
@@ -76,6 +77,7 @@ $(document).ready(function(){
     $("#loss").html(losses);
     $("#score").html(score);
     $("#random-num").html(randomNumber);
+    $("#total-games").html(totalGames);
    }
 
    // gameCondition()
@@ -83,11 +85,17 @@ $(document).ready(function(){
     function gameCondition(){
         if (score === randomNumber) {
             wins++;
+            totalGames++;
             $("#win").html(wins);
+            $("#total-games").html(totalGames);
+            alert("You Won :(");
             reset();
         }else if(score > randomNumber) {
             losses++;
+            totalGames++;
             $("#loss").html(losses);
+            $("#total-games").html(totalGames);
+            alert("You Lost :(");
             reset();
         }
     }
