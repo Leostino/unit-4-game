@@ -88,15 +88,15 @@ $(document).ready(function(){
             totalGames++;
             $("#win").html(wins);
             $("#total-games").html(totalGames);
-            alert("You Won :(");
             reset();
+            alert("You Won :(");
         }else if(score > randomNumber) {
             losses++;
             totalGames++;
             $("#loss").html(losses);
             $("#total-games").html(totalGames);
-            alert("You Lost :(");
             reset();
+            alert("You Lost :(");
         }
     }
 });
